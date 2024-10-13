@@ -7,7 +7,7 @@ import http from "http";
 import https from "https";
 import cors from "cors";
 import bodyParser from "body-parser";
-import { newpost } from "./admin/newpost.js";
+import { newpost } from "./admin/newpost.mjs";
 import path, { dirname } from "path";
 import { fileURLToPath } from "url";
 
