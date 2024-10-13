@@ -43,10 +43,8 @@ export const newpost = async (req, res) => {
     !data?.title ||
     !data?.excerpt ||
     !data?.coverImage ||
-    !data?.date ||
-    !data?.author.name ||
-    !data?.author.picture ||
-    !data?.ogImage.url
+    !data?.postContent ||
+    !data?.postContent.length
   ) {
     res.status(400).json({ message: "Data tidak valid" });
     return;
@@ -55,10 +53,12 @@ export const newpost = async (req, res) => {
   TITLE = data.title.replace(/'/g, "&#39;");
   excerpt = data.excerpt.replace(/'/g, "&#39;");
   coverImage = data.coverImage;
-  date = data.date;
+  date = new Date().toISOString();
   FILE_PATH = `_posts/${date}-${slugify(TITLE)}.md`;
-  author.name = data.author.name.replace(/'/g, "&#39;");
-  author.picture = data.author.picture;
+  author.name = data?.author?.name?.replace(/'/g, "&#39;") || "Admin";
+  author.picture =
+    data?.author?.picture ||
+    "https://api.dicebear.com/9.x/icons/svg?seed=Maria";
   ogImage.url = data.ogImage.url;
 
   const metadata = `---
@@ -70,7 +70,7 @@ author:
   name: ${author.name}
   picture: '${author.picture}'
 ogImage:
-  url: '${ogImage.url}'
+  url: '${ogImage?.url || coverImage}'
 ---
 
 `;

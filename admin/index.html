@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posting Baru</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" " crossorigin="
+    anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://pages-github.b-cdn.net/webcomponents/input.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/7.3.0/tinymce.min.js"></script>
+
+</head>
+
+<body>
+  <c-toast></c-toast>
+  <div class="container pb-3">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-center mb-3">Buat Postingan</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-4 row">
+          <div class="col-6">
+            <div class="card">
+              <div class="card-header bg-primary text-white">Wajib Diisi</div>
+              <div class="card-body">
+                <c-input type="text" id="title" label="Judul"></c-input>
+                <c-input type="text" id="author_name" label="Nama Penulis"></c-input>
+                <c-input type="text" id="excerpt" label="Deskripsi"></c-input>
+                <c-input type="upload" id="coverImage" label="Gambar Cover"></c-input>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <div class="card-header bg-success text-white">Informasi Tambahan</div>
+              <div class="card-body">
+                <c-input type="upload" id="author_picture" label="Foto Penulis"></c-input>
+                <c-input type="upload" id="ogImage" label="Gambar Thumbnail Whatsapp"></c-input>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="text-center" style="font-size: 18px; font-weight: bold;">ISI POSTINGAN</h3>
+        <c-input type="rtf" id="postContent" label="Konten Posting"></c-input>
+        <button class="btn btn-primary" onclick="createPost()">Simpan</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function createPost() {
+      const r = confirm("Apakah anda yakin dan sudah memeriksa ? Postingan ini tidak bisa dibatalkan.")
+      if (r !== true) {
+        return
+      }
+
+      toast.push('Menyimpan...');
+
+      const title = getVal('title')
+      const authorName = getVal('author_name')
+      const authorPicture = getVal('author_picture')
+      const excerpt = getVal('excerpt')
+      const coverImage = getVal('coverImage')
+      const ogImage = getVal('ogImage')
+      const postContent = getVal('postContent')
+
+      const data = {
+        title,
+        author: {
+          name: authorName,
+          picture: authorPicture,
+        },
+        excerpt,
+        coverImage,
+        ogImage,
+        postContent,
+      };
+
+      fetch("/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data?.message === "Post berhasil dibuat") {
+            toast.success("Post berhasil dibuat");
+          } else {
+            toast.error("Terjadi kesalahan. Pastikan sudah mengisi semua kolom yg wajib.");
+          }
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          toast.error("Terjadi kesalahan");
+        });
+    }
+  </script>
+</body>
+
+</html>

@@ -8,6 +8,8 @@ import https from "https";
 import cors from "cors";
 import bodyParser from "body-parser";
 import { newpost } from "./admin/newpost.js";
+import path, { dirname } from "path";
+import { fileURLToPath } from "url";
 
 dotenv.config();
 
@@ -27,7 +29,9 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 
 app.route("/").get((req, res) => {
-  res.send("index page");
+  res.sendFile(
+    path.join(dirname(fileURLToPath(import.meta.url)), "admin/index.html")
+  );
 });
 
 app.route("/").post(newpost);
