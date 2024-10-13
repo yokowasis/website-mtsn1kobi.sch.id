@@ -469,62 +469,6 @@ export default function Index({ allPosts, s }: Props) {
   </section>
   <!-- End Achivement Area -->
 
-  <!-- Start Newsletter Area -->
-  <section class="newsletter-area section">
-    <div class="container">
-      <div class="row ">
-        <div class="col-lg-6 offset-lg-3 col-md-12 col-12">
-          <div class="newsletter-title">
-            <span>Sign Up for</span>
-            <h2>The Newsletter</h2>
-            <p>Subscribe to us to always stay in touch with us and get the latest news<br>
-              about our company and all of our activities!</p>
-          </div>
-          <!-- Start Newsletter Form -->
-          <div class="subscribe-text wow fadeInUp" data-wow-delay=".2s">
-            <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-              <input name="EMAIL" placeholder="Your email address" class="common-input" onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Your email address'" required="" type="email">
-              <div class="button">
-                <button class="btn">Subscribe Now!</button>
-              </div>
-            </form>
-            <ul class="newsletter-social">
-              <li><a href="javascript:void(0)"><i class="lni lni-facebook-original"></i></a></li>
-              <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-              <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
-              <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
-              <li><a href="javascript:void(0)"><i class="lni lni-google"></i></a></li>
-            </ul>
-          </div>
-          <!-- End Newsletter Form -->
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /End Newsletter Area -->
-
-  <!-- Start Call To Action Area -->
-  <section class="call-action section overlay">
-    <div class="container">
-      <div class="row ">
-        <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
-          <div class="call-content">
-            <span>EduGrids Free Lite Version</span>
-            <h2>Currently you are using free <br>Lite
-              Version of EduGrids</h2>
-            <p>Please, purchase full version of the template to get all pages,<br>
-              features and commercial license</p>
-            <div class="button">
-              <a href="javascript:void(0)" class="btn">Buy Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /End Call To Action Area -->
-
   <!-- Start Clients Area -->
   <div class="client-logo-section">
     <div class="container">
@@ -569,73 +513,57 @@ export default function Index({ allPosts, s }: Props) {
     <div class="footer-middle">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6 col-12">
+          <div class="col-lg-4 col-md-6 col-12">
             <!-- Single Widget -->
             <div class="f-about single-footer">
               <div class="logo">
-                <a href="index.html"><img src="https://demo.graygrids.com/themes/edugrids/assets/images/logo/logo.svg" alt="Logo"></a>
+                <img style="width:50px" src="${
+                  settings.InfoSekolah.Logo
+                }" alt="Logo"> ${settings.InfoSekolah.Nama}
               </div>
-              <p>Nemo enim enim voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequ magni dolores eos qui ratione.</p>
+              <p>${settings.VisiMisi.Visi}</p>
               <div class="footer-social">
                 <ul>
-                  <li><a href="javascript:void(0)"><i class="lni lni-facebook-original"></i></a></li>
-                  <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                  <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
-                  <li><a href="javascript:void(0)"><i class="lni lni-google"></i></a></li>
+                  <li><a href="${
+                    settings.InfoSekolah.Facebook
+                  }"><i class="lni lni-facebook-original"></i></a></li>
+                  <li><a href="${
+                    settings.InfoSekolah.Twitter
+                  }"><i class="lni lni-twitter-original"></i></a></li>
+                  <li><a href="${
+                    settings.InfoSekolah.Youtube
+                  }"><i class="lni lni-youtube"></i></a></li>
                 </ul>
               </div>
             </div>
             <!-- End Single Widget -->
-          </div>
-          <div class="col-lg-3 col-md-6 col-12">
-            <!-- Single Widget -->
-            <div class="single-footer sm-custom-border recent-blog">
-              <h3>Latest News</h3>
-              <ul>
-                <li>
-                  <a href="blog-single-sidebar.html"><img src="https://demo.graygrids.com/themes/edugrids/assets/images/blog/footer-news1.jpg" alt="#">
-                    Top 10 books you Must read in 2023
-                  </a>
-                  <span class="date"><i class="lni lni-calendar"></i>July 15, 2023</span>
-                </li>
-                <li>
-                  <a href="blog-single-sidebar.html"><img src="https://demo.graygrids.com/themes/edugrids/assets/images/blog/footer-news2.jpg" alt="#">
-                    How to Improve Your Communication Skill
-                  </a>
-                  <span class="date"><i class="lni lni-calendar"></i>July 1, 2023</span>
-                </li>
-              </ul>
-            </div>
-            <!-- End Single Widget -->
-          </div>
-          <div class="col-lg-3 col-md-6 col-12">
+          </div>         
+          <div class="col-lg-4 col-md-6 col-12">
             <!-- Single Widget -->
             <div class="single-footer sm-custom-border f-link">
-              <h3>Course List</h3>
+              <h3>Link Penting</h3>
               <ul>
-                <li><a href="javascript:void(0)">Advance Javascript – ES6</a></li>
-                <li><a href="javascript:void(0)">WordPress for Intermediate</a></li>
-                <li><a href="javascript:void(0)">iOS App Development</a></li>
-                <li><a href="javascript:void(0)">Wbsite Development</a></li>
-                <li><a href="javascript:void(0)">Android App Development</a></li>
+                ${Object.keys(settings.PopularLinks)
+                  .map((key) => {
+                    return /*html*/ `
+              <li><a href="${settings.PopularLinks[key]}">${key}</a></li>`;
+                  })
+                  .join("")}
               </ul>
             </div>
             <!-- End Single Widget -->
           </div>
-          <div class="col-lg-3 col-md-6 col-12">
+          <div class="col-lg-4 col-md-6 col-12">
             <!-- Single Widget -->
             <div class="single-footer footer-newsletter">
-              <h3>Newsletter</h3>
-              <p>Subscribe to us to always stay in touch with us and get the latest news.</p>
-              <form action="mail/mail.php" method="get" target="_blank" class="newsletter-form">
-                <input name="EMAIL" placeholder="Your email address" class="common-input"
-                  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'" required=""
-                  type="email">
-                <div class="button">
-                  <button class="btn">Subscribe Now!</button>
-                </div>
-              </form>
+              <h3>Contact US</h3>
+              <p>Jika ada pertanyaan, bisa menghubungi kami melalui email <a href="mailto:${
+                settings.InfoSekolah.Email
+              }">${
+            settings.InfoSekolah.Email
+          }</a>  atau Whatsapp <a href="https://wa.me/${
+            settings.InfoSekolah.Whatsapp
+          }">${settings.InfoSekolah.Whatsapp}</a></p>
             </div>
             <!-- End Single Widget -->
           </div>

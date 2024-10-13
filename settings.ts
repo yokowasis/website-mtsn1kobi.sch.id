@@ -6,10 +6,11 @@ export const settings = {
       "https://1.bp.blogspot.com/-nbXsTP3itbw/YKHYwZ_dAiI/AAAAAAAAA_g/iMZS7qC9mLkCdJ2DxTu3QvdOJnT7TSm9ACLcBGAsYHQ/s960/man1-2.png",
     Gambar2:
       "https://4.bp.blogspot.com/-_-id53OE1C4/XIdRbNMLdbI/AAAAAAAAACs/YWCcH-X8VD89M5pPrMTO2qvbgYXj-UZ-QCLcBGAs/s1600/53742505_2293527304222890_7245120146245681152_n.jpg",
-    Nama: "MAN 1 Kota Bima",
-    SekilasInfo: `MAN 1 Kota Bima adalah sebuah sekolah menengah atas yang berada di bawah naungan Kementerian Agama. MAN 1 Kota Bima memiliki status negeri dan menawarkan jenjang pendidikan Madrasah Aliyah (MA), serta memiliki fasilitas yang memadai, seperti ruang kelas, laboratorium, perpustakaan, masjid, dan lapangan olahraga. MAN 1 Kota Bima memiliki visi untuk menjadi sekolah unggul yang berakhlak mulia, berwawasan global, dan berdaya saing tinggi.`,
+    Nama: "MTsN 1 Kota Bima",
+    SekilasInfo: `MTsN 1 Kota Bima adalah sebuah sekolah menengah atas yang berada di bawah naungan Kementerian Agama. MTsN 1 Kota Bima memiliki status negeri dan menawarkan jenjang pendidikan Madrasah Aliyah (MA), serta memiliki fasilitas yang memadai, seperti ruang kelas, laboratorium, perpustakaan, masjid, dan lapangan olahraga. MTsN 1 Kota Bima memiliki visi untuk menjadi sekolah unggul yang berakhlak mulia, berwawasan global, dan berdaya saing tinggi.`,
     Telepon: "(0374) 42434",
-    Email: "info@man1kotabima.sch.id",
+    Whatsapp: "6282340039781",
+    Email: "info@mtsn1kobi.sch.id",
     Alamat: "Jln. Seruni No.06 Kota Bima",
     JamKerja: "Senin s/d Sabtu : 07.00 - 14.30",
     Facebook: "",
@@ -89,11 +90,11 @@ export const settings = {
   ],
 
   Sambutan: `
-    Selamat datang di MAN 1 Kota Bima,
+    Selamat datang di MTsN 1 Kota Bima,
 
-    Di MAN 1 Kota Bima, kami berkomitmen untuk menciptakan lingkungan belajar yang inspiratif dan inklusif. Kami percaya bahwa pendidikan bukan hanya tentang mengajar mata pelajaran, tetapi juga tentang membentuk karakter, menggali potensi, dan menumbuhkan kreativitas. Di sini, kami menawarkan pengalaman pendidikan yang komprehensif dengan fasilitas modern dan kurikulum yang relevan untuk mempersiapkan setiap siswa menjadi individu yang siap menghadapi tantangan masa depan.
+    Di MTsN 1 Kota Bima, kami berkomitmen untuk menciptakan lingkungan belajar yang inspiratif dan inklusif. Kami percaya bahwa pendidikan bukan hanya tentang mengajar mata pelajaran, tetapi juga tentang membentuk karakter, menggali potensi, dan menumbuhkan kreativitas. Di sini, kami menawarkan pengalaman pendidikan yang komprehensif dengan fasilitas modern dan kurikulum yang relevan untuk mempersiapkan setiap siswa menjadi individu yang siap menghadapi tantangan masa depan.
 
-    Kami mengundang Anda untuk menjelajahi lebih dalam tentang MAN 1 Kota Bima melalui situs web kami. Bersama-sama, kami berkomitmen untuk membentuk generasi yang berintegritas, berdaya saing, dan berkontribusi positif bagi masyarakat. Terima kasih atas kepercayaan Anda dalam memilih pendidikan di MAN 1 Kota Bima.  
+    Kami mengundang Anda untuk menjelajahi lebih dalam tentang MTsN 1 Kota Bima melalui situs web kami. Bersama-sama, kami berkomitmen untuk membentuk generasi yang berintegritas, berdaya saing, dan berkontribusi positif bagi masyarakat. Terima kasih atas kepercayaan Anda dalam memilih pendidikan di MTsN 1 Kota Bima.  
   `,
 
   Menu: {
@@ -112,9 +113,9 @@ export const settings = {
   },
 
   PopularLinks: {
-    RDM: "https://rdm.man1kotabima.sch.id",
-    "Pendaftaran PPDB": "https://aplikasi.man1kotabima.sch.id/ppdb-signup/",
-    "Login PPDB": "https://aplikasi.man1kotabima.sch.id",
+    RDM: "https://rdm.mtsn1kobi.sch.id",
+    "Pendaftaran PPDB": "https://pendaftaran.mtsn1kobi.sch.id/",
+    "Pendaftaran Olimpiade": "https://pendaftaran.mtsn1kobi.sch.id/",
   },
 
   HomeBackground:
