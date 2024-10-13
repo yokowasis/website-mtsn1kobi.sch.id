@@ -128,7 +128,7 @@ export default function Index({ allPosts, s }: Props) {
   <section class="hero-area">
     <div class="hero-slider">
       <!-- Single Slider -->
-      <div class="hero-inner overlay" style="background-image: url('assets/images/hero/slider-bg1.jpg');">
+      <div class="hero-inner overlay" style="background-image: url('https://demo.graygrids.com/themes/edugrids/assets/images/hero/slider-bg1.jpg');">
         <div class="container">
           <div class="row ">
             <div class="col-lg-8 offset-lg-2 col-md-12 co-12">
@@ -153,7 +153,7 @@ export default function Index({ allPosts, s }: Props) {
       </div>
       <!--/ End Single Slider -->
       <!-- Single Slider -->
-      <div class="hero-inner overlay" style="background-image: url('assets/images/hero/slider-bg2.jpg');">
+      <div class="hero-inner overlay" style="background-image: url('https://demo.graygrids.com/themes/edugrids/assets/images/hero/slider-bg2.jpg');">
         <div class="container">
           <div class="row ">
             <div class="col-lg-8 offset-lg-2 col-md-12 co-12">
@@ -178,7 +178,7 @@ export default function Index({ allPosts, s }: Props) {
       </div>
       <!--/ End Single Slider -->
       <!-- Single Slider -->
-      <div class="hero-inner overlay" style="background-image: url('assets/images/hero/slider-bg3.jpg');">
+      <div class="hero-inner overlay" style="background-image: url('https://demo.graygrids.com/themes/edugrids/assets/images/hero/slider-bg3.jpg');">
         <div class="container">
           <div class="row ">
             <div class="col-lg-8 offset-lg-2 col-md-12 co-12">
@@ -231,7 +231,7 @@ export default function Index({ allPosts, s }: Props) {
         </div>
         <div class="col-lg-6 col-12">
           <div class="about-right wow fadeInRight" data-wow-delay=".4s">
-            <img src="assets/images/about/about-img2.png" alt="#">
+            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/about/about-img2.png" alt="#">
           </div>
         </div>
       </div>
@@ -260,7 +260,7 @@ export default function Index({ allPosts, s }: Props) {
             <!-- Start Single Course -->
             <div class="single-course wow fadeInUp" data-wow-delay=".2s">
               <div class="course-image">
-                <a href="course-details.html"><img src="assets/images/courses/courses-1.jpg" alt="#"></a>
+                <a href="course-details.html"><img src="https://demo.graygrids.com/themes/edugrids/assets/images/courses/courses-1.jpg" alt="#"></a>
                 <p class="price">$180</p>
               </div>
               <div class="content">
@@ -289,7 +289,7 @@ export default function Index({ allPosts, s }: Props) {
             <!-- Start Single Course -->
             <div class="single-course wow fadeInUp" data-wow-delay=".4s">
               <div class="course-image">
-                <a href="course-details.html"><img src="assets/images/courses/courses-2.jpg" alt="#"></a>
+                <a href="course-details.html"><img src="https://demo.graygrids.com/themes/edugrids/assets/images/courses/courses-2.jpg" alt="#"></a>
                 <p class="price">$200</p>
               </div>
               <div class="content">
@@ -318,7 +318,7 @@ export default function Index({ allPosts, s }: Props) {
             <!-- Start Single Course -->
             <div class="single-course wow fadeInUp" data-wow-delay=".6s">
               <div class="course-image">
-                <a href="course-details.html"><img src="assets/images/courses/courses-3.jpg" alt="#"></a>
+                <a href="course-details.html"><img src="https://demo.graygrids.com/themes/edugrids/assets/images/courses/courses-3.jpg" alt="#"></a>
                 <p class="price">Free</p>
               </div>
               <div class="content">
@@ -347,7 +347,7 @@ export default function Index({ allPosts, s }: Props) {
             <!-- Start Single Course -->
             <div class="single-course wow fadeInUp" data-wow-delay=".2s">
               <div class="course-image">
-                <a href="course-details.html"><img src="assets/images/courses/courses-4.jpg" alt="#"></a>
+                <a href="course-details.html"><img src="https://demo.graygrids.com/themes/edugrids/assets/images/courses/courses-4.jpg" alt="#"></a>
                 <p class="price">$299</p>
               </div>
               <div class="content">
@@ -376,7 +376,7 @@ export default function Index({ allPosts, s }: Props) {
             <!-- Start Single Course -->
             <div class="single-course wow fadeInUp" data-wow-delay=".4s">
               <div class="course-image">
-                <a href="course-details.html"><img src="assets/images/courses/courses-5.jpg" alt="#"></a>
+                <a href="course-details.html"><img src="https://demo.graygrids.com/themes/edugrids/assets/images/courses/courses-5.jpg" alt="#"></a>
                 <p class="price">$150</p>
               </div>
               <div class="content">
@@ -405,7 +405,7 @@ export default function Index({ allPosts, s }: Props) {
             <!-- Start Single Course -->
             <div class="single-course wow fadeInUp" data-wow-delay=".6s">
               <div class="course-image">
-                <a href="course-details.html"><img src="assets/images/courses/courses-6.jpg" alt="#"></a>
+                <a href="course-details.html"><img src="https://demo.graygrids.com/themes/edugrids/assets/images/courses/courses-6.jpg" alt="#"></a>
                 <p class="price">$250</p>
               </div>
               <div class="content">
@@ -531,31 +531,31 @@ export default function Index({ allPosts, s }: Props) {
       <div class="client-logo-wrapper">
         <div class="client-logo-carousel d-flex align-items-center justify-content-between">
           <div class="client-logo">
-            <img src="assets/images/clients/client1.svg" alt="">
+            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client1.svg" alt="">
           </div>
           <div class="client-logo">
-            <img src="assets/images/clients/client2.svg" alt="">
+            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client2.svg" alt="">
           </div>
           <div class="client-logo">
-            <img src="assets/images/clients/client3.svg" alt="">
+            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client3.svg" alt="">
           </div>
           <div class="client-logo">
-            <img src="assets/images/clients/client4.svg" alt="">
+            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client4.svg" alt="">
           </div>
           <div class="client-logo">
-            <img src="assets/images/clients/client5.svg" alt="">
+            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client5.svg" alt="">
           </div>
           <div class="client-logo">
-            <img src="assets/images/clients/client2.svg" alt="">
+            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client2.svg" alt="">
           </div>
           <div class="client-logo">
-            <img src="assets/images/clients/client3.svg" alt="">
+            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client3.svg" alt="">
           </div>
           <div class="client-logo">
-            <img src="assets/images/clients/client4.svg" alt="">
+            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client4.svg" alt="">
           </div>
           <div class="client-logo">
-            <img src="assets/images/clients/client5.svg" alt="">
+            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client5.svg" alt="">
           </div>
         </div>
       </div>
@@ -573,7 +573,7 @@ export default function Index({ allPosts, s }: Props) {
             <!-- Single Widget -->
             <div class="f-about single-footer">
               <div class="logo">
-                <a href="index.html"><img src="assets/images/logo/logo.svg" alt="Logo"></a>
+                <a href="index.html"><img src="https://demo.graygrids.com/themes/edugrids/assets/images/logo/logo.svg" alt="Logo"></a>
               </div>
               <p>Nemo enim enim voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
                 consequ magni dolores eos qui ratione.</p>
@@ -594,13 +594,13 @@ export default function Index({ allPosts, s }: Props) {
               <h3>Latest News</h3>
               <ul>
                 <li>
-                  <a href="blog-single-sidebar.html"><img src="assets/images/blog/footer-news1.jpg" alt="#">
+                  <a href="blog-single-sidebar.html"><img src="https://demo.graygrids.com/themes/edugrids/assets/images/blog/footer-news1.jpg" alt="#">
                     Top 10 books you Must read in 2023
                   </a>
                   <span class="date"><i class="lni lni-calendar"></i>July 15, 2023</span>
                 </li>
                 <li>
-                  <a href="blog-single-sidebar.html"><img src="assets/images/blog/footer-news2.jpg" alt="#">
+                  <a href="blog-single-sidebar.html"><img src="https://demo.graygrids.com/themes/edugrids/assets/images/blog/footer-news2.jpg" alt="#">
                     How to Improve Your Communication Skill
                   </a>
                   <span class="date"><i class="lni lni-calendar"></i>July 1, 2023</span>
