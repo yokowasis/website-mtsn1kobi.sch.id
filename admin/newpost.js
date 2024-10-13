@@ -1,4 +1,5 @@
 import dotenv from "dotenv";
+import sharp from "sharp";
 dotenv.config();
 
 /**
@@ -12,6 +13,57 @@ function slugify(text) {
     .replace(/\s+/g, "-") // Replace spaces with -
     .replace(/[^\w-]+/g, "") // Remove all non-word chars
     .replace(/--+/g, "-"); // Replace multiple - with single -
+}
+
+/**
+ *
+ * @param {*} blob
+ * @param {string} filename
+ * @return {Promise<string>}
+ */
+async function uploadBlob(blob, filename) {
+  await fetch(
+    `https://cdnhost2.bimasoft.web.id/api/files/?filekey=${filename}`,
+    {
+      headers: {
+        "Content-Type": "application/octet-stream",
+        Accept: "application/json",
+      },
+      method: "POST",
+      body: blob,
+    }
+  );
+  return `https://cdnhost2.bimasoft.web.id/api/files/uploads/${filename}`;
+}
+
+/**
+ *
+ * @param {string} imageUrl
+ * @param {string} filename
+ */
+async function processAndUploadImage(imageUrl, filename) {
+  try {
+    // Fetch the image from the CDN
+    const response = await fetch(imageUrl);
+    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
+    const buffer = await response.arrayBuffer();
+    const imgBuffer = Buffer.from(buffer);
+
+    // Resize and convert the image to JPEG with sharp
+    const resizedImageBuffer = await sharp(imgBuffer)
+      .resize(1200, 630) // resize to Open Graph specs
+      .toFormat("jpeg", { quality: 80 }) // convert to JPEG and set quality
+      .toBuffer();
+
+    // Upload the resized image
+    console.log("Image Resized");
+    const uploadUrl = await uploadBlob(resizedImageBuffer, filename);
+    return uploadUrl;
+  } catch (error) {
+    console.log(error);
+    return imageUrl;
+  }
 }
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
@@ -59,7 +111,10 @@ export const newpost = async (req, res) => {
   author.picture =
     data?.author?.picture ||
     "https://api.dicebear.com/9.x/icons/svg?seed=Maria";
-  ogImage.url = data.ogImage.url;
+  ogImage.url = await processAndUploadImage(
+    coverImage,
+    `ogimage-${date}-${slugify(TITLE)}.jpg`
+  );
 
   const metadata = `---
 title: '${TITLE}'
@@ -70,7 +125,7 @@ author:
   name: ${author.name}
   picture: '${author.picture}'
 ogImage:
-  url: '${ogImage?.url || coverImage}'
+  url: '${ogImage?.url}'
 ---
 
 `;

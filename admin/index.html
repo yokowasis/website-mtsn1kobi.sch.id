@@ -32,8 +32,7 @@
               <div class="card-header bg-primary text-white">Wajib Diisi</div>
               <div class="card-body">
                 <c-input type="text" id="title" label="Judul"></c-input>
-                <c-input type="text" id="author_name" label="Nama Penulis"></c-input>
-                <c-input type="text" id="excerpt" label="Deskripsi"></c-input>
+                <c-input type="text" id="excerpt" label="Ringkasan"></c-input>
                 <c-input type="upload" id="coverImage" label="Gambar Cover"></c-input>
               </div>
             </div>
@@ -42,8 +41,8 @@
             <div class="card">
               <div class="card-header bg-success text-white">Informasi Tambahan</div>
               <div class="card-body">
+                <c-input type="text" id="author_name" label="Nama Penulis"></c-input>
                 <c-input type="upload" id="author_picture" label="Foto Penulis"></c-input>
-                <c-input type="upload" id="ogImage" label="Gambar Thumbnail Whatsapp"></c-input>
               </div>
             </div>
           </div>
@@ -69,7 +68,6 @@
       const authorPicture = getVal('author_picture')
       const excerpt = getVal('excerpt')
       const coverImage = getVal('coverImage')
-      const ogImage = getVal('ogImage')
       const postContent = getVal('postContent')
 
       const data = {
@@ -80,7 +78,6 @@
         },
         excerpt,
         coverImage,
-        ogImage,
         postContent,
       };
 
