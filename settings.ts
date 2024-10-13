@@ -7,7 +7,7 @@ export const settings = {
     Gambar2:
       "https://4.bp.blogspot.com/-_-id53OE1C4/XIdRbNMLdbI/AAAAAAAAACs/YWCcH-X8VD89M5pPrMTO2qvbgYXj-UZ-QCLcBGAs/s1600/53742505_2293527304222890_7245120146245681152_n.jpg",
     Nama: "MTsN 1 Kota Bima",
-    SekilasInfo: `MTsN 1 Kota Bima adalah sebuah sekolah menengah atas yang berada di bawah naungan Kementerian Agama. MTsN 1 Kota Bima memiliki status negeri dan menawarkan jenjang pendidikan Madrasah Aliyah (MA), serta memiliki fasilitas yang memadai, seperti ruang kelas, laboratorium, perpustakaan, masjid, dan lapangan olahraga. MTsN 1 Kota Bima memiliki visi untuk menjadi sekolah unggul yang berakhlak mulia, berwawasan global, dan berdaya saing tinggi.`,
+    SekilasInfo: `MTsN 1 Kota Bima adalah sebuah madrasah tsanawiyah yang terletak di Kota Bima, Nusa Tenggara Barat. Sekolah ini memiliki visi untuk menciptakan generasi yang berakhlak mulia, berprestasi, dan berpengetahuan luas. Dengan tenaga pengajar yang profesional dan berpengalaman, MTsN 1 Kota Bima menawarkan berbagai program pendidikan yang berkualitas. `,
     Telepon: "(0374) 42434",
     Whatsapp: "6282340039781",
     Email: "info@mtsn1kobi.sch.id",
@@ -17,24 +17,45 @@ export const settings = {
     Twitter: "",
     Instagram: "",
     Youtube: "",
+    "Jumlah Siswa": "800",
+    "Jumlah Guru": "40",
+    "Jumlah Kelas": "27",
+    "Jumlah Extra Kurikuler": "8",
   },
 
   Slider: [
     {
       image:
         "https://images.pexels.com/photos/159497/school-notebook-binders-notepad-159497.jpeg?auto=compress&cs=tinysrgb&w=1920",
-      text: "Membangun Jiwa, Mengasah Potensi",
+      judul: "Membangun Jiwa, Mengasah Potensi",
+      text: "Menanamkan nilai-nilai akhlak dan karakter yang kuat dalam setiap individu. Mendorong setiap siswa untuk mengenali dan mengembangkan bakat serta minat mereka secara optimal.",
+      link: "https://google.com/",
     },
     {
       image:
-        "https://images.pexels.com/photos/1370296/pexels-photo-1370296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      text: "Kreativitas, Integritas, Prestasi.",
+        "https://images.pexels.com/photos/159497/school-notebook-binders-notepad-159497.jpeg?auto=compress&cs=tinysrgb&w=1920",
+      judul: "Mencetak Generasi Emas",
+      text: "Mengembangkan pendidikan yang holistik untuk membentuk pemimpin masa depan. Menyediakan fasilitas dan program yang mendukung pertumbuhan akademik dan non-akademik siswa.",
+      link: "https://google.com/",
     },
     {
       image:
-        "https://images.pexels.com/photos/207756/pexels-photo-207756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      text: "Kunci Masa Depan: Pendidikan Berkualitas.",
+        "https://images.pexels.com/photos/159497/school-notebook-binders-notepad-159497.jpeg?auto=compress&cs=tinysrgb&w=1920",
+      judul: "Inspirasi dan Inovasi",
+      text: "Mendorong kreativitas dan pemikiran kritis dalam setiap proses pembelajaran. Membekali siswa dengan keterampilan yang relevan untuk menghadapi tantangan di dunia modern.",
+      link: "https://google.com/",
     },
+  ],
+
+  Sponsor: [
+    "https://demo.graygrids.com/themes/edugrids/assets/images/clients/client1.svg",
+    "https://demo.graygrids.com/themes/edugrids/assets/images/clients/client2.svg",
+    "https://demo.graygrids.com/themes/edugrids/assets/images/clients/client3.svg",
+    "https://demo.graygrids.com/themes/edugrids/assets/images/clients/client4.svg",
+    "https://demo.graygrids.com/themes/edugrids/assets/images/clients/client1.svg",
+    "https://demo.graygrids.com/themes/edugrids/assets/images/clients/client2.svg",
+    "https://demo.graygrids.com/themes/edugrids/assets/images/clients/client3.svg",
+    "https://demo.graygrids.com/themes/edugrids/assets/images/clients/client4.svg",
   ],
 
   Keunggulan: [
@@ -124,7 +145,7 @@ export const settings = {
   About: {
     image:
       "https://images.pexels.com/photos/887584/pexels-photo-887584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    video: "https://www.youtube.com/embed/wgeDmKOKPrY?si=eNwahyAmd1l1xHLM",
+    video: "https://www.youtube.com/watch?v=wgeDmKOKPrY",
   },
 
   Events: [

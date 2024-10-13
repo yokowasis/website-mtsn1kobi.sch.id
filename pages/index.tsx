@@ -111,10 +111,6 @@ export default function Index({ allPosts, s }: Props) {
                     })
                     .join("")}                  
                 </ul>
-                <form class="d-flex search-form">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit"><i class="lni lni-search-alt"></i></button>
-                </form>
               </div> <!-- navbar collapse -->
             </nav> <!-- navbar -->
           </div>
@@ -126,82 +122,29 @@ export default function Index({ allPosts, s }: Props) {
 
   <!-- Start Hero Area -->
   <section class="hero-area">
-    <div class="hero-slider">
+    <div class="hero-slider">      
       <!-- Single Slider -->
-      <div class="hero-inner overlay" style="background-image: url('https://demo.graygrids.com/themes/edugrids/assets/images/hero/slider-bg1.jpg');">
+       ${settings.Slider.map((item) => {
+         return /*html*/ `
+      <div class="hero-inner overlay" style="background-image: url('${item.image}');">
         <div class="container">
           <div class="row ">
             <div class="col-lg-8 offset-lg-2 col-md-12 co-12">
               <div class="home-slider">
                 <div class="hero-text">
-                  <h5 class="wow fadeInUp" data-wow-delay=".3s">Start to Learning Today</h5>
-                  <h1 class="wow fadeInUp" data-wow-delay=".5s">Excellent And Friendly <br> Faculty Members</h1>
-                  <p class="wow fadeInUp" data-wow-delay=".7s">Lorem Ipsum is simply dummy text of the
-                    printing and typesetting <br> industry. Lorem Ipsum has been the industry's
-                    standard
-                    <br>dummy text ever since an to impression.
-                  </p>
+                  <h1 class="wow fadeInUp" data-wow-delay=".5s">${item.judul}</h1>
+                  <p class="wow fadeInUp" data-wow-delay=".7s">${item.text}</p>                  
                   <div class="button wow fadeInUp" data-wow-delay=".9s">
-                    <a href="about-us.html" class="btn">Learn More</a>
-                    <a href="courses-grid.html" class="btn alt-btn">Our Courses</a>
+                    <a href="${item.link}" class="btn alt-btn">Info Lebih Lanjut</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!--/ End Single Slider -->
-      <!-- Single Slider -->
-      <div class="hero-inner overlay" style="background-image: url('https://demo.graygrids.com/themes/edugrids/assets/images/hero/slider-bg2.jpg');">
-        <div class="container">
-          <div class="row ">
-            <div class="col-lg-8 offset-lg-2 col-md-12 co-12">
-              <div class="home-slider">
-                <div class="hero-text">
-                  <h5 class="wow fadeInUp" data-wow-delay=".3s">Start to learning Today</h5>
-                  <h1 class="wow fadeInUp" data-wow-delay=".5s">Innovation Paradise<br> For Students </h1>
-                  <p class="wow fadeInUp" data-wow-delay=".7s">Lorem Ipsum is simply dummy text of the
-                    printing and typesetting <br> industry. Lorem Ipsum has been the industry's
-                    standard
-                    <br>dummy text ever since an to impression.
-                  </p>
-                  <div class="button wow fadeInUp" data-wow-delay=".9s">
-                    <a href="about-us.html" class="btn">Learn More</a>
-                    <a href="events-grid.html" class="btn alt-btn">Our Events</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/ End Single Slider -->
-      <!-- Single Slider -->
-      <div class="hero-inner overlay" style="background-image: url('https://demo.graygrids.com/themes/edugrids/assets/images/hero/slider-bg3.jpg');">
-        <div class="container">
-          <div class="row ">
-            <div class="col-lg-8 offset-lg-2 col-md-12 co-12">
-              <div class="home-slider">
-                <div class="hero-text">
-                  <h5 class="wow fadeInUp" data-wow-delay=".3s">Start to learning Today</h5>
-                  <h1 class="wow fadeInUp" data-wow-delay=".5s">Your Ideas Will Be <br> Heard & Supported</h1>
-                  <p class="wow fadeInUp" data-wow-delay=".7s">Lorem Ipsum is simply dummy text of the
-                    printing and typesetting <br> industry. Lorem Ipsum has been the industry's
-                    standard
-                    <br>dummy text ever since an to impression.
-                  </p>
-                  <div class="button wow fadeInUp" data-wow-delay=".9s">
-                    <a href="about-us.html" class="btn">Learn More</a>
-                    <a href="#" class="btn alt-btn">Our Courses</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/ End Single Slider -->
+      </div>         
+      `;
+       }).join("")}
     </div>
   </section>
   <!--/ End Hero Area -->
@@ -213,17 +156,16 @@ export default function Index({ allPosts, s }: Props) {
         <div class="col-lg-6 col-12">
           <div class="about-left">
             <div class="about-title align-left">
-              <span class="wow fadeInDown" data-wow-delay=".2s">About Our University</span>
-              <h2 class="wow fadeInUp" data-wow-delay=".4s">Welcome to our campus</h2>
-              <p class="wow fadeInUp" data-wow-delay=".6s">Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit, do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad min im veniam, quis nostrud exercitati ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.</p>
-              <p class="qote wow fadeInUp" data-wow-delay=".8s">Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit, do eius mod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <span class="wow fadeInDown" data-wow-delay=".2s">About Our School</span>
+              <h2 class="wow fadeInUp" data-wow-delay=".4s">Selamat datang di ${
+                settings.InfoSekolah.Nama
+              }</h2>
+              <p class="wow fadeInUp" data-wow-delay=".6s">${
+                settings.InfoSekolah.SekilasInfo
+              }</p>
               <div class="button wow fadeInUp" data-wow-delay="1s">
                 <a href="about-us.html" class="btn">Read More</a>
-                <a href="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
+                <a href="${settings.About.video}"
                   class="glightbox video btn"> Play Video<i class="lni lni-play"></i></a>
               </div>
             </div>
@@ -231,7 +173,7 @@ export default function Index({ allPosts, s }: Props) {
         </div>
         <div class="col-lg-6 col-12">
           <div class="about-right wow fadeInRight" data-wow-delay=".4s">
-            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/about/about-img2.png" alt="#">
+            <img src="${settings.About.image}" alt="#">
           </div>
         </div>
       </div>
@@ -248,9 +190,10 @@ export default function Index({ allPosts, s }: Props) {
             <div class="section-icon wow zoomIn" data-wow-delay=".4s">
               <i class="lni lni-graduation"></i>
             </div>
-            <h2 class="wow fadeInUp" data-wow-delay=".4s">Featured Courses</h2>
-            <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
-              Ipsum available, but the majority have suffered alteration in some form.</p>
+            <h2 class="wow fadeInUp" data-wow-delay=".4s">Berita Terbaru</h2>
+            <p class="wow fadeInUp" data-wow-delay=".6s">Informasi Terbaru tentang ${
+              settings.InfoSekolah.Nama
+            }</p>
           </div>
         </div>
       </div>
@@ -442,26 +385,34 @@ export default function Index({ allPosts, s }: Props) {
       <div class="row">
         <div class="col-lg-3 col-md-3 col-12">
           <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
-            <h3 class="counter"><span id="secondo1" class="countup" cup-end="500">500</span>+</h3>
-            <h4>Happy Clients</h4>
+            <h3 class="counter"><span id="secondo1" class="countup" cup-end="${
+              settings.InfoSekolah["Jumlah Siswa"]
+            }">${settings.InfoSekolah["Jumlah Siswa"]}</span></h3>
+            <h4>Siswa</h4>
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-12">
           <div class="single-achievement wow fadeInUp" data-wow-delay=".4s">
-            <h3 class="counter"><span id="secondo2" class="countup" cup-end="70">70</span>+</h3>
-            <h4>Online Courses</h4>
+            <h3 class="counter"><span id="secondo2" class="countup" cup-end="${
+              settings.InfoSekolah["Jumlah Guru"]
+            }">${settings.InfoSekolah["Jumlah Guru"]}</span></h3>
+            <h4>Guru</h4>
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-12">
           <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
-            <h3 class="counter"><span id="secondo3" class="countup" cup-end="100">100</span>%</h3>
-            <h4>Satisfaction</h4>
+            <h3 class="counter"><span id="secondo3" class="countup" cup-end="${
+              settings.InfoSekolah["Jumlah Kelas"]
+            }">${settings.InfoSekolah["Jumlah Kelas"]}</span></h3>
+            <h4>Kelas</h4>
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-12">
           <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
-            <h3 class="counter"><span id="secondo3" class="countup" cup-end="100">100%</span>%</h3>
-            <h4>Support</h4>
+            <h3 class="counter"><span id="secondo3" class="countup" cup-end="${
+              settings.InfoSekolah["Jumlah Extra Kurikuler"]
+            }">${settings.InfoSekolah["Jumlah Extra Kurikuler"]}</span></h3>
+            <h4>Extra Kurikuler</h4>
           </div>
         </div>
       </div>
@@ -474,33 +425,12 @@ export default function Index({ allPosts, s }: Props) {
     <div class="container">
       <div class="client-logo-wrapper">
         <div class="client-logo-carousel d-flex align-items-center justify-content-between">
+          ${settings.Sponsor.map((item, index) => {
+            return /*html*/ `
           <div class="client-logo">
-            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client1.svg" alt="">
-          </div>
-          <div class="client-logo">
-            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client2.svg" alt="">
-          </div>
-          <div class="client-logo">
-            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client3.svg" alt="">
-          </div>
-          <div class="client-logo">
-            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client4.svg" alt="">
-          </div>
-          <div class="client-logo">
-            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client5.svg" alt="">
-          </div>
-          <div class="client-logo">
-            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client2.svg" alt="">
-          </div>
-          <div class="client-logo">
-            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client3.svg" alt="">
-          </div>
-          <div class="client-logo">
-            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client4.svg" alt="">
-          </div>
-          <div class="client-logo">
-            <img src="https://demo.graygrids.com/themes/edugrids/assets/images/clients/client5.svg" alt="">
-          </div>
+            <img src="${item}" alt="">
+          </div>`;
+          }).join("")}
         </div>
       </div>
     </div>
@@ -521,7 +451,16 @@ export default function Index({ allPosts, s }: Props) {
                   settings.InfoSekolah.Logo
                 }" alt="Logo"> ${settings.InfoSekolah.Nama}
               </div>
-              <p>${settings.VisiMisi.Visi}</p>
+              <p class="mb-3">Visi : ${settings.VisiMisi.Visi}</p>
+              <p>Misi :</p>
+              <ol>
+                ${settings.VisiMisi.Misi.map((item, index) => {
+                  return /*html*/ `
+                <li style="margin-left:15px; text-indent:-15px;">${
+                  index + 1
+                }. ${item}</li>`;
+                }).join("")}
+              </ol>
               <div class="footer-social">
                 <ul>
                   <li><a href="${
@@ -578,8 +517,8 @@ export default function Index({ allPosts, s }: Props) {
           <div class="row">
             <div class="col-12">
               <div class="left">
-                <p>Designed and Developed by<a href="https://graygrids.com/" rel="nofollow"
-                    target="_blank">GrayGrids</a></p>
+                <p>Designed and Developed by<a href="https://bimasoft.web.id/" rel="nofollow"
+                    target="_blank">Bimasoft</a></p>
               </div>
             </div>
           </div>
