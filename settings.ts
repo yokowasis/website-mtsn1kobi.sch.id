@@ -120,13 +120,12 @@ export const settings = {
 
   Menu: {
     Home: "/",
-    About: "/pages/about",
-    Info: {
-      Visi_Misi: "/pages/visi-misi",
-      Struktur_Organisasi: "/pages/struktur-organisasi",
-      Jadwal_Pelajaran: "/pages/jadwal-pelajaran",
-    },
-    Contact: "/pages/contact",
+    "Gudang Data": "https://drive.google.com/drive/u/3/folders/0B3C01DptteeCY0JaZnFScmFoM0U?resourcekey=0-dYVdL3lhWzzazjeMnhVERg",
+    PPDB: "https://pendaftaran.mtsn1kobi.sch.id",
+    "Jadwal Pelajaran": {
+      "Siswa": "https://drive.google.com/drive/u/3/folders/1T2w1E1ylYUoao6NODdtfsjDsq-rS-Sw1",
+      "Guru": "https://drive.google.com/drive/u/3/folders/1l_13ZtzXWSdC1NwekIzkOXsdOcUDTRAZ",
+    }
   },
 
   QuickLinks: {
