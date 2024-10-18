@@ -1,35 +1,39 @@
 import { settings } from "../settings";
 
-export const footer = /*html*/`
+export const footer = /*html*/ `
 <!-- Start Achivement Area -->
   <section class="our-achievement section overlay">
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-3 col-12">
           <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
-            <h3 class="counter"><span id="secondo1" class="countup" cup-end="${settings.InfoSekolah["Jumlah Siswa"]
-  }">${settings.InfoSekolah["Jumlah Siswa"]}</span></h3>
+            <h3 class="counter"><span id="secondo1" class="countup" cup-end="${
+              settings.InfoSekolah["Jumlah Siswa"]
+            }">${settings.InfoSekolah["Jumlah Siswa"]}</span></h3>
             <h4>Siswa</h4>
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-12">
           <div class="single-achievement wow fadeInUp" data-wow-delay=".4s">
-            <h3 class="counter"><span id="secondo2" class="countup" cup-end="${settings.InfoSekolah["Jumlah Guru"]
-  }">${settings.InfoSekolah["Jumlah Guru"]}</span></h3>
+            <h3 class="counter"><span id="secondo2" class="countup" cup-end="${
+              settings.InfoSekolah["Jumlah Guru"]
+            }">${settings.InfoSekolah["Jumlah Guru"]}</span></h3>
             <h4>Guru</h4>
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-12">
           <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
-            <h3 class="counter"><span id="secondo3" class="countup" cup-end="${settings.InfoSekolah["Jumlah Kelas"]
-  }">${settings.InfoSekolah["Jumlah Kelas"]}</span></h3>
+            <h3 class="counter"><span id="secondo3" class="countup" cup-end="${
+              settings.InfoSekolah["Jumlah Kelas"]
+            }">${settings.InfoSekolah["Jumlah Kelas"]}</span></h3>
             <h4>Kelas</h4>
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-12">
           <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
-            <h3 class="counter"><span id="secondo3" class="countup" cup-end="${settings.InfoSekolah["Jumlah Extra Kurikuler"]
-  }">${settings.InfoSekolah["Jumlah Extra Kurikuler"]}</span></h3>
+            <h3 class="counter"><span id="secondo3" class="countup" cup-end="${
+              settings.InfoSekolah["Jumlah Extra Kurikuler"]
+            }">${settings.InfoSekolah["Jumlah Extra Kurikuler"]}</span></h3>
             <h4>Extra Kurikuler</h4>
           </div>
         </div>
@@ -44,11 +48,11 @@ export const footer = /*html*/`
       <div class="client-logo-wrapper">
         <div class="client-logo-carousel d-flex align-items-center justify-content-between">
           ${settings.Sponsor.map((item, index) => {
-    return /*html*/ `
+            return /*html*/ `
           <div class="client-logo">
             <img src="${item}" alt="">
           </div>`;
-  }).join("")}
+          }).join("")}
         </div>
       </div>
     </div>
@@ -65,26 +69,31 @@ export const footer = /*html*/`
             <!-- Single Widget -->
             <div class="f-about single-footer">
               <div class="logo">
-                <img style="width:50px" src="${settings.InfoSekolah.Logo
-  }" alt="Logo"> ${settings.InfoSekolah.Nama}
+                <img style="width:50px" src="${
+                  settings.InfoSekolah.Logo
+                }" alt="Logo"> ${settings.InfoSekolah.Nama}
               </div>
               <p class="mb-3">Visi : ${settings.VisiMisi.Visi}</p>
               <p>Misi :</p>
               <ol>
                 ${settings.VisiMisi.Misi.map((item, index) => {
-    return /*html*/ `
-                <li style="margin-left:15px; text-indent:-15px;">${index + 1
-      }. ${item}</li>`;
-  }).join("")}
+                  return /*html*/ `
+                <li style="margin-left:15px; text-indent:-15px;">${
+                  index + 1
+                }. ${item}</li>`;
+                }).join("")}
               </ol>
               <div class="footer-social">
                 <ul>
-                  <li><a href="${settings.InfoSekolah.Facebook
-  }"><i class="lni lni-facebook-original"></i></a></li>
-                  <li><a href="${settings.InfoSekolah.Twitter
-  }"><i class="lni lni-twitter-original"></i></a></li>
-                  <li><a href="${settings.InfoSekolah.Youtube
-  }"><i class="lni lni-youtube"></i></a></li>
+                  <li><a href="${
+                    settings.InfoSekolah.Facebook
+                  }"><i class="lni lni-facebook-original"></i></a></li>
+                  <li><a href="${
+                    settings.InfoSekolah.Twitter
+                  }"><i class="lni lni-twitter-original"></i></a></li>
+                  <li><a href="${
+                    settings.InfoSekolah.Youtube
+                  }"><i class="lni lni-youtube"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -96,11 +105,11 @@ export const footer = /*html*/`
               <h3>Link Penting</h3>
               <ul>
                 ${Object.keys(settings.PopularLinks)
-    .map((key) => {
-      return /*html*/ `
+                  .map((key) => {
+                    return /*html*/ `
               <li><a href="${settings.PopularLinks[key]}">${key}</a></li>`;
-    })
-    .join("")}
+                  })
+                  .join("")}
               </ul>
             </div>
             <!-- End Single Widget -->
@@ -109,10 +118,13 @@ export const footer = /*html*/`
             <!-- Single Widget -->
             <div class="single-footer footer-newsletter">
               <h3>Contact US</h3>
-              <p>Jika ada pertanyaan, bisa menghubungi kami melalui email <a href="mailto:${settings.InfoSekolah.Email
-  }">${settings.InfoSekolah.Email
-  }</a>  atau Whatsapp <a href="https://wa.me/${settings.InfoSekolah.Whatsapp
-  }">${settings.InfoSekolah.Whatsapp}</a></p>
+              <p>Jika ada pertanyaan, bisa menghubungi kami melalui email <a href="mailto:${
+                settings.InfoSekolah.Email
+              }">${
+  settings.InfoSekolah.Email
+}</a>  atau Whatsapp <a href="https://wa.me/${settings.InfoSekolah.Whatsapp}">${
+  settings.InfoSekolah.Whatsapp
+}</a></p>
             </div>
             <!-- End Single Widget -->
           </div>
@@ -143,4 +155,10 @@ export const footer = /*html*/`
   <a href="#" class="scroll-top btn-hover">
     <i class="lni lni-chevron-up"></i>
   </a>
-`
+`;
+
+const Footer = () => {
+  return <></>;
+};
+
+export default Footer;

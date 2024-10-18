@@ -10,8 +10,8 @@ ogImage:
 
 ## Penerimaan Peserta Didik Baru 2024/2025
 
-1. Pendaftaran dapat diakses melalui Link : [PENDAFTARAN PPDB](https://aplikasi.man1kotabima.sch.id/ppdb/daftar)
-2. Pengisian Biodata (Setelah Pendaftaran) : [LOGIN PENGISIAN BIODATA](https://aplikasi.man1kotabima.sch.id/)
+1. Pendaftaran dapat diakses melalui Link : [PENDAFTARAN PPDB](https://pendaftaran.mtsn1kobi.sch.id)
+2. Pengisian Biodata (Setelah Pendaftaran) : [LOGIN PENGISIAN BIODATA](https://pendaftaran.mtsn1kobi.sch.id)
 
 ## Info Jadwal
 
@@ -21,12 +21,12 @@ ogImage:
 
 ## Cek Kelulusan
 
-1. Cek Kelulusan dapat di akses melalui link : [CEK KELULUSAN](https://aplikasi.man1kotabima.sch.id/kelulusan)
+1. Cek Kelulusan dapat di akses melalui link : [CEK KELULUSAN](https://pendaftaran.mtsn1kobi.sch.id)
 2. Kelulusan akan diumumkan pada hari Senin, Tanggal 10 Juni 2024.
 
 ## Daftar Ulang
 
-Bagi siswa yang telah dinyatakan lulus, wajib melaksanakan daftar ulang pada tanggal 10 s/d 14 Juni 2024 di MAN 1 KOTA BIMA.
+Bagi siswa yang telah dinyatakan lulus, wajib melaksanakan daftar ulang pada tanggal 10 s/d 14 Juni 2024 di MTSN 1 KOTA BIMA.
 
 ## Contact Person :
 
