@@ -27,23 +27,9 @@ export const settings = {
     {
       image:
         "https://images.pexels.com/photos/159497/school-notebook-binders-notepad-159497.jpeg?auto=compress&cs=tinysrgb&w=1920",
-      judul: "Membangun Jiwa, Mengasah Potensi",
-      text: "Menanamkan nilai-nilai akhlak dan karakter yang kuat dalam setiap individu. Mendorong setiap siswa untuk mengenali dan mengembangkan bakat serta minat mereka secara optimal.",
-      link: "https://google.com/",
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/159497/school-notebook-binders-notepad-159497.jpeg?auto=compress&cs=tinysrgb&w=1920",
-      judul: "Mencetak Generasi Emas",
-      text: "Mengembangkan pendidikan yang holistik untuk membentuk pemimpin masa depan. Menyediakan fasilitas dan program yang mendukung pertumbuhan akademik dan non-akademik siswa.",
-      link: "https://google.com/",
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/159497/school-notebook-binders-notepad-159497.jpeg?auto=compress&cs=tinysrgb&w=1920",
-      judul: "Inspirasi dan Inovasi",
-      text: "Mendorong kreativitas dan pemikiran kritis dalam setiap proses pembelajaran. Membekali siswa dengan keterampilan yang relevan untuk menghadapi tantangan di dunia modern.",
-      link: "https://google.com/",
+      judul: "Pendaftaran OMI HAB 2025",
+      text: "Pendaftaran OMI HAB 2025 akan segera dibuka. Silahkan mengunjungi link ini untuk mendaftar.",
+      link: "/pages/omihab",
     },
   ],
 
@@ -120,12 +106,14 @@ export const settings = {
 
   Menu: {
     Home: "/",
-    "Gudang Data": "https://drive.google.com/drive/u/3/folders/0B3C01DptteeCY0JaZnFScmFoM0U?resourcekey=0-dYVdL3lhWzzazjeMnhVERg",
+    "Gudang Data":
+      "https://drive.google.com/drive/u/3/folders/0B3C01DptteeCY0JaZnFScmFoM0U?resourcekey=0-dYVdL3lhWzzazjeMnhVERg",
     PPDB: "https://pendaftaran.mtsn1kobi.sch.id",
     "Jadwal Pelajaran": {
-      "Siswa": "https://drive.google.com/drive/u/3/folders/1T2w1E1ylYUoao6NODdtfsjDsq-rS-Sw1",
-      "Guru": "https://drive.google.com/drive/u/3/folders/1l_13ZtzXWSdC1NwekIzkOXsdOcUDTRAZ",
-    }
+      Siswa:
+        "https://drive.google.com/drive/u/3/folders/1T2w1E1ylYUoao6NODdtfsjDsq-rS-Sw1",
+      Guru: "https://drive.google.com/drive/u/3/folders/1l_13ZtzXWSdC1NwekIzkOXsdOcUDTRAZ",
+    },
   },
 
   QuickLinks: {
