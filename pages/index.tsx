@@ -1,4 +1,4 @@
-import { getAllPosts } from "../lib/api";
+import { getAllPosts, getRecentPosts } from "../lib/api";
 import Post from "../interfaces/post";
 import Head from "next/head";
 import { Settings, settings } from "../settings";
@@ -137,7 +137,7 @@ export default function Index({ allPosts, s }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
+  const allPosts = getRecentPosts([
     "title",
     "date",
     "slug",
@@ -145,7 +145,7 @@ export const getStaticProps = async () => {
     "coverImage",
     "excerpt",
     "ogImage",
-  ]);
+  ], 6);
 
   settings.InfoSekolah.Title = `Official Website ${settings.InfoSekolah.Nama}`;
 

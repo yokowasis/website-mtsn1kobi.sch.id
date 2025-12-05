@@ -44,6 +44,13 @@ export function getAllPosts(fields: string[] = []) {
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
 
-  // return top 8 posts
-  return posts.slice(0, 6);
+  // return all posts
+  return posts;
+}
+
+export function getRecentPosts(fields: string[] = [], limit: number = 6) {
+  const allPosts = getAllPosts(fields);
+  
+  // return only the latest posts for homepage display
+  return allPosts.slice(0, limit);
 }
