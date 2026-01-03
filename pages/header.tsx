@@ -46,7 +46,7 @@ export const header = /*html*/ `
         <div class="col-lg-12">
           <div class="nav-inner">
             <nav class="navbar navbar-expand-lg">
-              <a class="navbar-brand" href="index.html">                
+              <a class="navbar-brand" href="/">
                 <img style="width:50px" src="${
                   settings.InfoSekolah.Logo
                 }" alt="Logo">

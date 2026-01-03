@@ -104,7 +104,7 @@ export default function Index({ allPosts, s }: Props) {
                   <!-- Start Single Course -->
                   <div class="single-course wow fadeInUp" data-wow-delay=".2s">
                     <div class="course-image">
-                      <a href="/posts/${item.slug}"><img src="${item.ogImage.url}" alt="#"></a>
+                      <a style="display:block" href="/posts/${item.slug}"><img style="height:176px;object-fit:cover" src="${item.ogImage.url === "Loading ..." ? "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg" : item.ogImage.url}" alt="#"></a>
                     </div>
                     <div class="content">
                       <h3><a href="/posts/${item.slug}">${item.title}</a></h3>
@@ -137,15 +137,10 @@ export default function Index({ allPosts, s }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allPosts = getRecentPosts([
-    "title",
-    "date",
-    "slug",
-    "author",
-    "coverImage",
-    "excerpt",
-    "ogImage",
-  ], 6);
+  const allPosts = getRecentPosts(
+    ["title", "date", "slug", "author", "coverImage", "excerpt", "ogImage"],
+    6,
+  );
 
   settings.InfoSekolah.Title = `Official Website ${settings.InfoSekolah.Nama}`;
 

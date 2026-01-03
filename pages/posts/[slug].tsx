@@ -33,7 +33,9 @@ export default function Post({ post, morePosts, allPosts, preview, s }: Props) {
           __html: /*html*/ `
         ${header}
     <div class="breadcrumbs overlay" style="background-image: url('${
-      post.coverImage
+      post.coverImage === "Loading ..."
+        ? "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"
+        : post.coverImage
     }');">
         <div class="container">
             <div class="row align-items-center">
@@ -52,7 +54,11 @@ export default function Post({ post, morePosts, allPosts, preview, s }: Props) {
       <div class="col-lg-8 col-12">
         <div class="single-inner">
           <div class="post-thumbnils">
-            <img src="${post.coverImage}" alt="#">
+            ${
+              post.coverImage === "Loading ..."
+                ? ""
+                : `<img src="${post.coverImage === "Loading ..." ? "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg" : post.coverImage}" alt="#">`
+            }
           </div>
           <div class="post-details">
             <div class="detail-inner">
@@ -131,7 +137,9 @@ export default function Post({ post, morePosts, allPosts, preview, s }: Props) {
               <div class="single-popular-feed">
                 <div class="feed-img">
                   <a href="/posts/${item.slug}"><img src="${
-                    item.ogImage.url
+                    item.ogImage.url === "Loading ..."
+                      ? "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"
+                      : item.ogImage.url
                   }" alt="#"></a>
                 </div>
                 <div class="feed-desc">
