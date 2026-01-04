@@ -1824,14 +1824,16 @@ ol {
   .navbar-nav .nav-item .sub-menu {
     position: static;
     width: 100%;
-    opacity: 1;
-    visibility: visible;
     -webkit-box-shadow: none;
             box-shadow: none;
     padding: 0;
     border: none;
     margin-left: 15px;
     margin-right: 15px;
+  }
+  .navbar-nav .nav-item .sub-menu.show {
+    opacity: 1;
+    visibility: visible;
   }
   .navbar-nav .nav-item .sub-menu .nav-item a {
     padding: 12px 12px;
