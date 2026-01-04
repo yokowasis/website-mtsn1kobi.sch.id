@@ -77,17 +77,17 @@ export const header = /*html*/ `
                       } else {
                         s = /*html*/ `
                         <li class="nav-item">
-                          <a class="page-scroll dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
-                            data-bs-target="#submenu-${key}" aria-controls="navbarSupportedContent" aria-expanded="false"
-                            aria-label="Toggle navigation">${key}</a>
-                          <ul class="sub-menu collapse" id="submenu-${key}">
-                            ${Object.keys(menuObject).map((subKey) => {
-                              return /*html*/ `
-                              <li class="nav-item"><a href="${
-                                menuObject[subKey]
-                              }">${subKey.replace(/_/g, " ")}</a></li>`;
-                            })}
-                          </ul>
+                           <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
+                             data-bs-target="#submenu-${key}" aria-controls="navbarSupportedContent" aria-expanded="false"
+                             aria-label="Toggle navigation">${key}</a>
+                           <ul class="sub-menu collapse" id="submenu-${key}">
+                             ${Object.keys(menuObject).map((subKey) => {
+                               return /*html*/ `
+                               <li class="nav-item"><a href="${
+                                 menuObject[subKey]
+                               }">${subKey.replace(/_/g, " ")}</a></li>`;
+                             }).join("")}
+                           </ul>
                         </li>`;
                       }
                       return s;
@@ -102,6 +102,85 @@ export const header = /*html*/ `
     </div> <!-- container -->
   </header>
   <!-- End Header Area -->
+  
+  <script>
+    // Initialize mobile submenu collapse functionality
+    function initializeSubmenus() {
+      const collapseElements = document.querySelectorAll('.dd-menu[data-bs-toggle="collapse"]');
+      
+      collapseElements.forEach(function(element) {
+        // Remove any existing listeners by cloning the element
+        const newElement = element.cloneNode(true);
+        element.parentNode.replaceChild(newElement, element);
+        
+        newElement.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          
+          const targetId = this.getAttribute('data-bs-target');
+          
+          // Retry mechanism to find the target element (handles DOM timing issues)
+          let target = null;
+          let attempts = 0;
+          const maxAttempts = 5;
+          
+          const findTarget = () => {
+            target = document.querySelector(targetId);
+            attempts++;
+            
+            if (target || attempts >= maxAttempts) {
+              processTarget();
+            } else {
+              setTimeout(findTarget, 50);
+            }
+          };
+          
+          const processTarget = () => {
+            if (target) {
+              // Toggle submenu visibility
+              const isCurrentlyVisible = target.classList.contains('show');
+              
+              if (isCurrentlyVisible) {
+                target.classList.remove('show');
+                newElement.setAttribute('aria-expanded', 'false');
+              } else {
+                // Close other open submenus first
+                document.querySelectorAll('.sub-menu.show').forEach(function(openMenu) {
+                  openMenu.classList.remove('show');
+                });
+                document.querySelectorAll('.dd-menu[aria-expanded="true"]').forEach(function(openToggle) {
+                  openToggle.setAttribute('aria-expanded', 'false');
+                });
+                
+                // Open this submenu
+                target.classList.add('show');
+                newElement.setAttribute('aria-expanded', 'true');
+              }
+            } else {
+              // Fallback: find any submenu and show it
+              const anySubmenu = document.querySelector('[id*="submenu"]');
+              if (anySubmenu) {
+                anySubmenu.classList.add('show');
+              }
+            }
+          };
+          
+          findTarget();
+        });
+      });
+    }
+    
+    // Initialize with multiple timing strategies to handle React/Next.js rendering
+    setTimeout(initializeSubmenus, 100);
+    setTimeout(initializeSubmenus, 500); 
+    setTimeout(initializeSubmenus, 1000);
+    
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initializeSubmenus);
+    } else {
+      initializeSubmenus();
+    }
+  </script>
   
 `;
 
