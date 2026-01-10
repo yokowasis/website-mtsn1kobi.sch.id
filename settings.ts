@@ -27,9 +27,9 @@ export const settings = {
     {
       image:
         "https://images.pexels.com/photos/159497/school-notebook-binders-notepad-159497.jpeg?auto=compress&cs=tinysrgb&w=1920",
-      judul: "Pendaftaran OMI HAB 2025",
-      text: "Pendaftaran OMI HAB 2025 akan segera dibuka. Silahkan mengunjungi link ini untuk mendaftar.",
-      link: "/pages/omihab",
+      judul: "SELAMAT DATANG DI MTSN 1 KOTA BIMA",
+      text: "Selamat datang di MTsN 1 Kota Bima, Nusa Tenggara Barat. Sekolah ini memiliki visi untuk menciptakan generasi yang berakhlak mulia, berprestasi, dan berpengetahuan luas. Dengan tenaga pengajar yang profesional dan berpengalaman, MTsN 1 Kota Bima menawarkan berbagai program pendidikan yang berkualitas. ",
+      // link: "/pages/omihab",
     },
   ],
 
@@ -114,7 +114,6 @@ export const settings = {
       "PPDB Reguler": "/pages/ppdb-reguler",
       "PPDB Pondok": "/pages/ppdb-pondok",
     },
-    PPDB: "https://pendaftaran.mtsn1kobi.sch.id",
     "Jadwal Pelajaran": {
       Siswa:
         "https://drive.google.com/drive/u/3/folders/1T2w1E1ylYUoao6NODdtfsjDsq-rS-Sw1",
