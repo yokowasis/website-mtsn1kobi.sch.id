@@ -108,6 +108,12 @@ export const settings = {
     Home: "/",
     "Gudang Data":
       "https://drive.google.com/drive/u/3/folders/0B3C01DptteeCY0JaZnFScmFoM0U?resourcekey=0-dYVdL3lhWzzazjeMnhVERg",
+    Pendaftaran: {
+      ISOC: "/pages/isoc",
+      "OMI HAB": "/pages/omihab",
+      "PPDB Reguler": "/pages/ppdb-reguler",
+      "PPDB Pondok": "/pages/ppdb-pondok",
+    },
     PPDB: "https://pendaftaran.mtsn1kobi.sch.id",
     "Jadwal Pelajaran": {
       Siswa:

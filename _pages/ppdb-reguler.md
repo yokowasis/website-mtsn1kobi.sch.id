@@ -1,5 +1,5 @@
 ---
-title: "Pendaftaran OMI HAB"
+title: "PPDB Pondok"
 date: "2023-01-01T00:00:00.000Z"
 author:
   name: Admin
@@ -8,4 +8,4 @@ ogImage:
   url: "/assets/blog/preview/cover.jpg"
 ---
 
-Pendaftaran OMI HAB akan segera dibuka.
+PPDB Reguler akan segera dibuka.
