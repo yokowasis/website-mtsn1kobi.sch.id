@@ -8,4 +8,6 @@ ogImage:
   url: "/assets/blog/preview/cover.jpg"
 ---
 
-PPDB Reguler akan segera dibuka.
+Pengisian Formulir Pendaftaran : [Link](/pages/ppdb-reguler-daftar)
+
+Link Login Cetak Kartu Pendaftaran : [Link](/pages/ppdb-reguler-login)
