@@ -1,4 +1,4 @@
-import { getPostBySlug, getAllPosts } from "../../lib/apiPages";
+import { getPostBySlug, getAllPosts, getRecentPosts } from "../../lib/apiPages";
 
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
@@ -206,7 +206,7 @@ export async function getStaticProps({ params }: Params) {
   ]);
   const content = await markdownToHtml(post.content || "");
 
-  const allPosts = getAllPosts(["title", "date", "slug", "ogImage"]);
+  const allPosts = getRecentPosts(["title", "date", "slug", "ogImage"], 6);
 
   return {
     props: {
