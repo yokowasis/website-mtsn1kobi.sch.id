@@ -9,7 +9,7 @@ export const settings = {
     Nama: "MTsN 1 Kota Bima",
     SekilasInfo: `MTsN 1 Kota Bima adalah sebuah madrasah tsanawiyah yang terletak di Kota Bima, Nusa Tenggara Barat. Sekolah ini memiliki visi untuk menciptakan generasi yang berakhlak mulia, berprestasi, dan berpengetahuan luas. Dengan tenaga pengajar yang profesional dan berpengalaman, MTsN 1 Kota Bima menawarkan berbagai program pendidikan yang berkualitas. `,
     Telepon: "(0374) 42434",
-    Whatsapp: "6282340039781",
+    Whatsapp: "+6282340143330",
     Email: "info@mtsn1kobi.sch.id",
     Alamat: "Jln. Seruni No.06 Kota Bima",
     JamKerja: "Senin s/d Sabtu : 07.00 - 14.30",
