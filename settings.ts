@@ -111,8 +111,7 @@ export const settings = {
     Pendaftaran: {
       ISOC: "/pages/isoc",
       "OMI HAB": "/pages/omihab",
-      "PMB Reguler": "/pages/ppdb-reguler",
-      "PMB Boarding School": "/pages/ppdb-pondok",
+      "Murid Baru (PMB)": "/pages/ppdb-reguler",
     },
     "Jadwal Pelajaran": {
       Siswa:
