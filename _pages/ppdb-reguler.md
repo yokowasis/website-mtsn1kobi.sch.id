@@ -41,16 +41,16 @@ ogImage:
       <td><a href="/pages/ppdb-reguler-pengumuman">Link</a></td>
     </tr>
     <tr>
-      <td>prestasi</td>
+      <td>Prestasi</td>
       <td><a href="/pages/ppdb-prestasi-daftar">Link</a></td>
       <td><a href="/pages/ppdb-prestasi-login">Link</a></td>
       <td><a href="/pages/ppdb-prestasi-pengumuman">Link</a></td>
     </tr>
     <tr>
-      <td>mahadtsuluts</td>
-      <td><a href="/pages/ppdb-mahadtsuluts-daftar">Link</a></td>
-      <td><a href="/pages/ppdb-mahadtsuluts-login">Link</a></td>
-      <td><a href="/pages/ppdb-mahadtsuluts-pengumuman">Link</a></td>
+      <td>Ma'had Tsuluts</td>
+      <td><a href="/pages/ppdb-mahad-daftar">Link</a></td>
+      <td><a href="/pages/ppdb-mahad-login">Link</a></td>
+      <td><a href="/pages/ppdb-mahad-pengumuman">Link</a></td>
     </tr>
   </tbody>
 </table>
