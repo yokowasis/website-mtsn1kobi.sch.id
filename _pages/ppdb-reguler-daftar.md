@@ -15,7 +15,7 @@ ogImage:
   ></script>
 
   <div style="max-width:700px; margin:auto"> 
-    <iframe style="width:100%" src="https://aplikasi.mtsn1kobi.sch.id//page/viewforms/?id=76" id="myIframe"></iframe>
+    <iframe style="width:100%" src="https://aplikasi.mtsn1kobi.sch.id//page/viewforms/?id=114" id="myIframe"></iframe>
   </div>
 
   <script>

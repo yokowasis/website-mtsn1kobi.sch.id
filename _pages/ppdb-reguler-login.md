@@ -14,8 +14,8 @@ ogImage:
     async
   ></script>
 
-  <div style="max-width:700px; margin:auto"> 
-    <iframe style="width:100%" src="https://aplikasi.mtsn1kobi.sch.id//page/viewforms/view.php?id=76&fields=NIK;NISN" id="myIframe"></iframe>
+  <div style="max-width:700px; margin:auto">
+    <iframe style="width:100%" src="https://aplikasi.mtsn1kobi.sch.id//page/viewforms/view.php?id=114&fields=NIK;NISN" id="myIframe"></iframe>
   </div>
 
   <script>

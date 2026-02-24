@@ -1,5 +1,5 @@
 ---
-title: "Login Cetak Kartu Pendaftaran"
+title: "Login Cetak Kartu Kelulusan PMB Prestasi"
 date: "2023-01-01T00:00:00.000Z"
 author:
   name: Admin
@@ -14,8 +14,8 @@ ogImage:
     async
   ></script>
 
-  <div style="max-width:700px; margin:auto"> 
-    <iframe style="width:100%" src="https://aplikasi.mtsn1kobi.sch.id//page/viewforms/view.php?id=76&fields=NIK;NISN" id="myIframe"></iframe>
+  <div style="max-width:700px; margin:auto">
+    <iframe style="width:100%" src="https://aplikasi.mtsn1kobi.sch.id//page/viewforms/view.php?id=122&fields=NIK;NISN" id="myIframe"></iframe>
   </div>
 
   <script>
