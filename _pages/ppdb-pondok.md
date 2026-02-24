@@ -11,3 +11,5 @@ ogImage:
 Pengisian Formulir Pendaftaran : [Link](/pages/ppdb-pondok-daftar)
 
 Link Login Cetak Kartu Pendaftaran : [Link](/pages/ppdb-pondok-login)
+
+Link Cetak Kartu Kelulusan : [Link](/pages/ppdb-pondok-pengumuman)
